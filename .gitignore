@@ -1,5 +1,7 @@
+venv/
+env/
 *.pyc
 __pycache__
 .vscode
 .idea
-db.sqlite3
+wishlist/db.sqlite3
