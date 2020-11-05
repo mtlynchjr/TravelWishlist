@@ -3,6 +3,7 @@ from .models import Place
 from .forms import NewPlaceForm
 
 def place_list(request):
+    
     if request.method == 'POST':
         form = NewPlaceForm(request.POST)
         place = form.save()
