@@ -11,12 +11,12 @@ def place_list(request):
             place.save()
             return redirect('place_list')
 
-    visited = Place.objects.filter(visited=False).order_by('name')
+    places = Place.objects.filter(visited=False).order_by('name')
     new_place_form = NewPlaceForm()
-    return render(request, 'travel_wishlist/wishlist.html', {'places' : places , 'new_place_form' : new_place_form})
+    return render(request, 'travel_wishlist/wishlist.html' , {'places' : places , 'new_place_form' : new_place_form})
 
-def places_visted(request):
-    visited = Place.objects.filter(visted=True)
+def places_visited(request):
+    visited = Place.objects.filter(visited=True).order_by('name')
     return render(request, 'travel_wishlist/visited.html', {'visited' : visited})
 
 def about(request):
