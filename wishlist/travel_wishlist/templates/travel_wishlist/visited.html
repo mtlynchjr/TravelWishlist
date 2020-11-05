@@ -1,7 +1,20 @@
 <h2>Places You Have Visited</h2>
 
+{% if visited %}
+
 <ul>
     {% for place in visited %}
     <li>{{ place.name }}</li>
     {% endfor %}
 </ul>
+
+{% else %}
+
+<p>You have not yet visited any places.</p>
+
+{% endif %}
+
+<p></p>
+<a href="{% url 'wishlist' %}">Places You Hope to Visit</a>
+<p></p>
+<a href="{% url 'about' %}">About</a>
