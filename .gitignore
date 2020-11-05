@@ -1,3 +1,5 @@
+# Listed below should be ignored by git
+
 venv/
 env/
 *.pyc
