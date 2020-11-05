@@ -1,25 +1,28 @@
+/* Style sheets for better appearance and ease of use */
+
+/* Sets layout and size parameters for place name */
 span.place-name {
     display: inline-block;
     width: 70%;
 }
-
+/* Dictates visted form display */
 form.visited-form {
     display: inline;
 }
-
+/* Set desired margin for wishlist */
 div.wishlist {
     margin: 20px
 }
-
+/* Arrange label on page */
 label {
     display: inline;
     padding-right: 8px;
 }
-
+/* Sets spacing for links */
 a.nav-link {
     margin-right: 10px;
 }
-
+/* Adds specific colors to Add New Place button for appearance */
 #add-new-place {
     background-color: green;
     border: darkgreen;

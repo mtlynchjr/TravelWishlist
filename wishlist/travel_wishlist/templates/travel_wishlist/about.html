@@ -1,26 +1,28 @@
+<!-- Extends to communicate with base.html -->
 {% extends 'travel_wishlist/base.html' %}
+<!-- Page-specific content from html files -->
 {% block content %}
-
+<!-- Create About header -->
 <h2>About</h2>
 
 <div>
     <p>{{ about }}<p></p>
-
+    <!-- If there is an author popluated, display -->
     {% if author %}
 
     <p>Created by: {{ author}}</p>
     
     {% else %}
-    
+    <!-- If not, advise author is unknown -->
     <p>The author's name is unknown.</p>
     
     {% endif %}
-
+    <!-- Create a for loop to spellout "wishlist" vertically one character at a time. -->
     {% for letter in 'wishlist' %}
-
+    <!-- Displays each letter as long as loop runs -->
     <p>{{ letter }}</p>
     
     {% endfor %}
 </div>
-
+<!-- End About.html block -->
 {% endblock %}

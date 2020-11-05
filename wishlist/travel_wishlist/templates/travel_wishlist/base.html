@@ -1,23 +1,27 @@
+<!-- Load static stylesheet directory -->
 {% load static %}
 
+<!-- Set Doctype to HMTL -->
 <!DOCTYPE html>
 <html>
+    <!-- Creates a headerwith title and links to stylesheets -->
     <head>
         <title>Travel Wishlist</title>
         <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">
         <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
     </head>
-
+    <!-- Smaller header guiding user -->
     <h1>Where do you want to visit?</h1>
-
+    <!-- Body content will be pulled from individual, specific html file -->
     <body>
         {% block content %}
         {% endblock %}
     </body>
 
     <div>
+        <!-- Display "credits" -->
         <p>A "Travel Wishlist" built with Django</p>
-
+        <!-- Include links to site's other pages -->
         <a class="nav-link" href="{% url 'place_list' %}">Places You Hope to Vist</a>
         <a class="nav-link" href="{% url 'places_visited' %}">Places You Have Visted</a>
         <a class="nav-link" href="{% url 'about' %}">About</a>
