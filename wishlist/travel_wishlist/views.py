@@ -16,6 +16,6 @@ def place_list(request):
     return render(request, 'travel_wishlist/wishlist.html', {'places' : places , 'new_place_form' : new_place_form})
 
 def about(request):
-    author = 'Michael Lycnh'
-    about = 'A website to create  list of places to visit.'
-    return render.request , 'travel_wishlist/about.html' , {'author' : author , 'about' : about}
+    author = 'Michael Lynch'
+    about = 'A website to create list of places to visit.'
+    return render(request , 'travel_wishlist/about.html' , {'author' : author , 'about' : about})
