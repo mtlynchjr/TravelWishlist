@@ -1,4 +1,4 @@
-span.place_name {
+span.place-name {
     display: inline-block;
     width: 70%;
 }
@@ -17,5 +17,10 @@ label {
 }
 
 a.nav-link {
-    padding-right: 10px;
+    margin-right: 10px;
+}
+
+#add-new-place {
+    background-color: green;
+    border: darkgreen;
 }
